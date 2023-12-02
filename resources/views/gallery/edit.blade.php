@@ -12,8 +12,10 @@
 
     </div>
     @guest
-    <a href="{{ route('register') }}" class="btn btn-reg btn-secondary-gradient rounded-pill py-2 px-4 d-none d-lg-block {{ (request()->is('register')) ? 'active' : '' }}">Register</a>
-    <a href="{{ route('login') }}" class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-1 d-none d-lg-block {{ (request()->is('register')) ? 'active' : '' }}">Login</a>
+    <div class="navbar-nav d-lg-flex">
+        <a href="{{ route('register') }}" class="navbar-nav btn btn-reg btn-secondary-gradient rounded-pill py-2 px-4 ms-3 d-sm-block d-lg-block text-blue  {{ (request()->is('register')) ? 'active' : '' }}">Register</a>
+        <a href="{{ route('login') }}" class="navbar-nav btn btn-primary-gradient rounded-pill py-2 px-4 ms-1 d-sm-block  d-lg-block {{ (request()->is('register')) ? 'active' : '' }}">Login</a>
+    </div>
     @else
     <div class="nav-item text-white dropdown">
         <a class="nav-link text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

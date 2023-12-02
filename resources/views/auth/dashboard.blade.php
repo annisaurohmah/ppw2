@@ -10,11 +10,14 @@
         <a href="{{ route('galleryapi.index') }}" class="nav-item nav-link">API Documentation</a>
         <a href="{{ route('landing') }}" class="nav-item nav-link">Back to home</a>
     </div>
-    <div class="nav-item dropdown">
+    <div class="navbar-nav nav-item dropdown">
         <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             {{ Auth::user()->name }}
         </a>
         <ul class="dropdown-menu">
+            <li>
+                <a class="dropdown-item" href="{{ route('users') }}">Management Users</a>
+            </li>
             <li><a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                         document.getElementById('logout-form').submit();">Logout</a>
                 <form id="logout-form" action="{{ route('logout') }}" method="POST">
@@ -22,9 +25,7 @@
                 </form>
             </li>
 
-            <li>
-                <a class="dropdown-item" href="{{ route('users') }}">Management Users</a>
-            </li>
+            
 
         </ul>
 

@@ -114,6 +114,9 @@
   // For always expanded or extra full navbars, ensure content aligns itself
   // properly vertically. Can be easily overridden with flex utilities.
   align-items: center;
+
+  
+    color: #004797 !important;
 }
 
 // Button for toggling the navbar when in its collapsed state

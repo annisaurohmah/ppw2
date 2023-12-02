@@ -124,7 +124,11 @@ h6,
     color: #accbee !important;
 }
 
-
+@media screen and (max-width: 991.98px) {
+    .text-blue {
+        color: #004797 !important;
+    }
+    }
 
 /*** Gradient Text & BG ***/
 .text-primary-gradient {
